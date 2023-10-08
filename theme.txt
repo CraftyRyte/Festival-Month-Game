@@ -1,0 +1,3 @@
+Ticket Booth Simulator:
+Build a simulation game where players manage a ticket booth at a festival entrance. Players must sell tickets to incoming visitors, ensure smooth entry, and keep track of revenue.
+

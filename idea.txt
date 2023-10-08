@@ -1,0 +1,9 @@
+There will be an amuesment park, and player will be the ticket collector.
+The civilians will pay player for their tickets, but sometimes they will
+try to fool the player by not giving them money, and the player has to 
+catch and fight them in an epic 1vs1 battle, with special attacks, moves
+power-ups, potions etc.
+
+Enemies get harder and harder to fight as you progress (It is infinite) and you
+can level up too. You lose the moment you are defeated, and have to start all
+over again.
