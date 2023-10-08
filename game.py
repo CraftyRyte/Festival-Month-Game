@@ -1,4 +1,5 @@
 import pygame as pg
+import pdb
 import collector_lee
 
 class Game:
@@ -8,7 +9,9 @@ class Game:
         self.fps = fps
         self.screen = pg.display.set_mode((dimensions[0], dimensions[1]))
         self.caption = caption
-        self.collector_lee = collector_lee.CollectorLee(self.screen, dimensions[0], dimensions[1])
+        # pdb.set_trace()
+        (self.clock.tick(self.fps))
+        self.collector_lee = collector_lee.CollectorLee(self.screen, dimensions[0], dimensions[1], 500, self.clock.tick(self.fps)/1000.0)
 
     def check_events(self):
         for event in pg.event.get():
@@ -19,7 +22,8 @@ class Game:
     def run(self):
         pg.display.set_caption(self.caption)
         while True:
+            self.clock.tick(self.fps)
             self.check_events()
             self.collector_lee.run()
             pg.display.update()
-            self.clock.tick(self.fps)
+            pg.display.flip()
